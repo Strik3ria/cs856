@@ -1,12 +1,7 @@
-html,
 body {
     margin: 0;
     height: 100%;
     background: #c4c4c4;
-}
-
-* {
-    box-sizing: border-box;
 }
 
 a {
@@ -15,28 +10,30 @@ a {
 }
 
 .bottom-nav {
-    display: flex;
-    justify-content: space-around;
     background: #c3bebe;
-    height: 6em;
+    line-height: 22px;
 }
 
 .nav-list {
-    margin-right: 2em;
-    line-height: 4em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 50px;
 }
 
 .nav-item {
-    display: inline;
-    margin: 1.5em;
     list-style-type: none;
     font-size: 16px;
+    height: 100%;
 }
 
 .top-nav {
-    background: #d7d1d1;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    background: #d7d1d1;
 }
 
 .taniti-brand > img {
@@ -45,14 +42,14 @@ a {
 }
 
 .taniti-search {
-    margin: 5em 2em 0 0;
+    margin-right: 1em;
 }
 
 .content {
     min-height: calc(100vh - 18em);
-    padding: 3em;
+    padding: 6em;
     width: 80%;
-    margin: 0 auto -50px auto;
+    margin: 0 auto 2px auto;
 }
 
 .footer {
@@ -63,4 +60,8 @@ a {
 
 footer {
     line-height: 50px;
+}
+
+.active {
+    background-color: #d7d1d1;
 }
