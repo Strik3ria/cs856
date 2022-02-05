@@ -52,10 +52,10 @@ p > a {
 }
 
 .content {
-    min-height: calc(100vh - 18em);
+    min-height: calc(100vh - 30em);
     padding: 6em;
-    width: 80%;
-    margin: 0 auto 2px auto;
+    margin: 10em;
+    background: #d7d1d1;
 }
 
 .footer {
