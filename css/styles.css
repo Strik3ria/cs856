@@ -9,6 +9,10 @@ a {
     color: black;
 }
 
+p > a {
+    text-decoration: underline;
+}
+
 .bottom-nav {
     background: #c3bebe;
     line-height: 22px;
@@ -66,4 +70,19 @@ footer {
 
 .active {
     background-color: #d7d1d1;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    margin: 3em;
+}
+
+input[type="text"],
+button {
+    width: 30%;
+}
+
+.center {
+    text-align: center;
 }

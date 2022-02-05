@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>CS856 - Task 1 - Taniti</title>
+        <meta name="description" content="Taniti Travel Accomodations" />
+        <link rel="stylesheet" type="text/css" href="css/styles.css" />
+        <script src="templates/header.js"></script>
+        <script src="templates/footer.js"></script>
+        <script src="js/index.js"></script>
+    </head>
+    <body>
+        <taniti-header></taniti-header>
+        <div class="content">
+            <main>
+                <div id="flexed">
+                    <h1 id="title">Reserve your seats!</h1>
+                    <form id="form">
+                        <label for="name">Full Name: </label>
+                        <input type="text" id="name" name="name" \ />
+                        <label for="reservation-for">Reservation For: </label>
+                        <input
+                            type="text"
+                            id="reservation-for"
+                            name="reservation-for"
+                        />
+                        <label for="number-of-seats">Number of Seats: </label>
+                        <input
+                            type="text"
+                            id="number-of-seats"
+                            name="number-of-seats"
+                        />
+                        <label for="show-time">Show time: </label>
+                        <input type="text" id="show-time" name="show-time" />
+                        <button type="submit">Reserve</button>
+                    </form>
+                </div>
+            </main>
+        </div>
+        <taniti-footer></taniti-footer>
+        <script type="text/javascript">
+            setActive("entertainment");
+        </script>
+    </body>
+</html>

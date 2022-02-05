@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>CS856 - Task 1 - Taniti</title>
+        <meta name="description" content="Taniti Travel Accomodations" />
+        <link rel="stylesheet" type="text/css" href="css/styles.css" />
+        <script src="templates/header.js"></script>
+        <script src="templates/footer.js"></script>
+        <script src="js/index.js"></script>
+    </head>
+    <body>
+        <taniti-header></taniti-header>
+        <div class="content">
+            <main>
+                <div id="flexed">
+                    <h1 id="title">Reserve your table at {}</h1>
+                    <form id="form">
+                        <label for="name">Full Name: </label>
+                        <input type="text" id="name" name="name" \ />
+                        <label for="reservation-time"
+                            >Reservation Date/Time:
+                        </label>
+                        <input
+                            type="text"
+                            id="reservation-time"
+                            name="reservation-time"
+                            \
+                        />
+                        <label for="seating-for">Seating for: </label>
+                        <input
+                            type="text"
+                            id="seating-for"
+                            name="seating-for"
+                            \
+                        />
+                        <label for="restaurant">Restaurant: </label>
+                        <input
+                            type="text"
+                            id="restaurant"
+                            name="restaurant"
+                            \
+                        />
+                        <button type="submit">Reserve</button>
+                    </form>
+                </div>
+            </main>
+        </div>
+        <taniti-footer></taniti-footer>
+        <script type="text/javascript">
+            setActive("restaurants");
+            let url = document.location.href;
+            let name;
+
+            if (!document.location.href.includes("McDonalds")) {
+                name = properCaseWithSpace(getNameParameter(url));
+            } else {
+                name = getNameParameter(url);
+            }
+            let restaurantNameEl = document.getElementById("restaurant");
+            restaurantNameEl.value = name;
+
+            let reserveTitleEl = document.getElementById("title");
+            reserveTitleEl.innerHTML = reserveTitleEl.innerHTML.replace(
+                "{}",
+                name
+            );
+        </script>
+    </body>
+</html>
