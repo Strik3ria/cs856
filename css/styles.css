@@ -53,8 +53,8 @@ p > a {
 
 .content {
     min-height: calc(100vh - 30em);
-    padding: 6em;
-    margin: 10em;
+    padding: 2em;
+    margin: 6em;
     background: #d7d1d1;
 }
 
